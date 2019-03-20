@@ -1,8 +1,8 @@
 'use strict';
 
-require('./plugin/components/ads-label_5');
-require('./plugin/components/black-poster_5');
-
-var videoJsVAST = require('./plugin/videojs.vast.vpaid');
-
-videojs.plugin('vastClient', videoJsVAST);
+module.exports =  function(videojs) {
+  require('./plugin/components/ads-label_5')(videojs);
+  require('./plugin/components/black-poster_5')(videojs);
+  var videoJsVAST = require('./plugin/videojs.vast.vpaid');
+  videojs.plugin('vastClient', videoJsVAST);
+};
