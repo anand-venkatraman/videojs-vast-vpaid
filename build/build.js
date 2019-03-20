@@ -100,7 +100,11 @@ gulp.task('build-scripts', function() {
         debug: true,
         paths: 'bower_components',
         cache: {},
-        packageCache: {}
+        packageCache: {},
+        standalone: 'PulsePointVideoJsVastPlugin',
+        opts: {
+          standalone: 'PulsePointVideoJsVastPlugin'
+        }
       })
       .transform(babelify, {
         presets: ['es2015'],
