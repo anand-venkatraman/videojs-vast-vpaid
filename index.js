@@ -1,3 +1,3 @@
 module.exports = {
-  VideoJsVastPlugin: require('./src/scripts/videojs_5.vast.vpaid')
+  VideoJsVastPlugin: require('./bin/videojs_5.vast.vpaid')
 };
